@@ -43,6 +43,17 @@ process RSEM_PREPAREREFERENCE {
             $fasta \\
             rsem/genome
 
+        echo 'Current directory:'
+        pwd
+        echo 'Contents:'
+        ls -alFh
+        echo 'Disk space:'
+        df -h
+        echo 'Rsem folder:'
+        ls -alFh rsem
+        echo 'lsblk:'
+        lsblk
+
         cp rsem/genome.transcripts.fa .
 
         cat <<-END_VERSIONS > versions.yml
@@ -59,6 +70,17 @@ process RSEM_PREPAREREFERENCE {
             $args \\
             $fasta \\
             rsem/genome
+
+        echo 'Current directory:'
+        pwd
+        echo 'Contents:'
+        ls -alFh
+        echo 'Disk space:'
+        df -h
+        echo 'Rsem folder:'
+        ls -alFh rsem
+        echo 'lsblk:'
+        lsblk
 
         cp rsem/genome.transcripts.fa .
 
